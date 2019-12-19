@@ -134,7 +134,6 @@ What is your name?
 >>> my_bool2 = False  # False
 >>> my_bool3 = 1 < 2  # True
 >>> my_bool4 = 1 == 2  # False
-
 ```
 
 ### #5 기본재료 2 : 리스트, 튜플, 딕셔너리
@@ -149,7 +148,6 @@ What is your name?
 >>> my_list.append(123)  # [123]
 >>> my_list.append('abc') # [123, 'abc']
 >>> my_list.append(True)  # [123, 'abc', True]
-
 ```
 
 #### 튜플 (Tuple)
@@ -162,7 +160,6 @@ What is your name?
 >>> my_tuple2 = (1,)
 >>> my_tuple3 = ('a', 'b', 'c')
 >>> my_tuple4 = 3.14, 'Python', True
-
 ```
 
 #### 딕셔너리 (Dictionary)
@@ -175,7 +172,6 @@ What is your name?
 >>> my_dict[1] = 'a'  # {1: 'a'}
 >>> my_dict['b'] = 2  # {1: 'a', 'b': 2}
 >>> my_dict['c'] = 'd'  # {1: 'a', 'b': 2, 'c': 'd'}
-
 ```
 
 ### #6 자료형 변환하기
@@ -187,7 +183,6 @@ What is your name?
 ```python
 >>> print(int(3.14))
 3
-
 ```
 
 - float(): 실수형으로 변환합니다.
@@ -195,7 +190,6 @@ What is your name?
 ```python
 >>> print(float(3))
 3.0
-
 ```
 
 - str(): 문자열로 변환합니다.
@@ -205,7 +199,6 @@ What is your name?
 3.0
 >>> print(type(str(3.0)))
 <class 'str'>
-
 ```
 
 - list(): 리스트로 변환합니다.
@@ -213,7 +206,6 @@ What is your name?
 ```python
 >>> print(list('3.0'))
 ['3', '.', '0']
-
 ```
 
 ### #7 주석
@@ -231,7 +223,6 @@ Hello Python!
 12345
 >>> print(2 + 3)  # 계산결과를 출력합니다.
 5
-
 ```
 
 ### #8 문자열
@@ -246,7 +237,6 @@ Hello Python!
 python
 >>> type(my_str)
 <class 'str'>
-
 ```
 
 - 문자열 안에 큰따옴표나 작은따옴표를 넣고 싶을 때는 서로 다른 따옴표를 함께 씁니다.
@@ -254,7 +244,6 @@ python
 ```python
 >>> print("Let's go!")
 >>> print('I said, "Hello!"')
-
 ```
 
 - 같은 따옴표를 세 번씩 쓰면 여러 줄을 표현할 수 있습니다.
@@ -264,7 +253,6 @@ python
 지하철
 택시
 """
-
 ```
 
 ### #9 문자열 포맷팅
@@ -279,7 +267,6 @@ My name is Tom
 x = 1, y = 2
 >>> print('%d x %d = %d' % (2, 3, 2 * 3))
 2 x 3 = 6
-
 ```
 
 - %d : 정수형 숫자를 대입할 수 있습니다.
@@ -287,7 +274,6 @@ x = 1, y = 2
 ```python
 >>> print('%d %d' % (1, 2))
 1 2
-
 ```
 
 - %f : 실수형 숫자를 대입할 수 있습니다.
@@ -295,7 +281,6 @@ x = 1, y = 2
 ```python
 >>> print('%f' % 3.14)
 3.14
-
 ```
 
 - %s : 문자열을 대입할 수 있습니다.
@@ -303,7 +288,6 @@ x = 1, y = 2
 ```python
 >>> print('%s' % 'coding')
 coding
-
 ```
 
 ### #10 format()
@@ -322,7 +306,6 @@ My name is Tom
 2 x 3 = 6
 >>> print('{1} x {0} ={2}'.format(2, 3, 2 * 3))  # 괄호 안의 숫자는 순서를 지정
 3 x 2 = 6
-
 ```
 
 ### #11 문자열 인덱싱
@@ -346,7 +329,6 @@ IndexError: string index out of range
 의
 >>> my_name[8]
 딩
-
 ```
 
 - 음수를 인덱스로 사용할 수 있습니다.
@@ -356,7 +338,6 @@ IndexError: string index out of range
 >>> my_name = '김왼손의 왼손코딩'
 >>> my_name[-1]
 딩
-
 ```
 
 - 리스트 자료형에서도 거의 비슷합니다.
@@ -378,7 +359,6 @@ lo P
 >>> my_name = '김왼손의 왼손코딩'
 >>> print(my_name[5:7])
 왼손
-
 ```
 
 - 앞이나 뒤 숫자를 생략할 수도 있습니다.
@@ -389,7 +369,6 @@ lo P
 김왼
 >>> my_name[7:]
 코딩
-
 ```
 
 ### #13 문자열 메서드
@@ -408,7 +387,6 @@ banana
 >>> my_name = '김왼손의 왼손코딩'
 >>> print(my_name.split())
 ['김왼손의', '왼손코딩']
-
 ```
 
 ### #14 독스트링
@@ -424,7 +402,6 @@ def 함수이름(인자1, ...):
     실행할 명령2
     ...
     return 결과
-
 ```
 
 ### #15 end, 이스케이프 코드
@@ -440,7 +417,6 @@ def 함수이름(인자1, ...):
 집단지성/
 >>> print('집단지성', end='미운코딩새끼')
 집단지성미운코딩새끼
-
 ```
 
 ### #16 리스트
@@ -459,7 +435,6 @@ def 함수이름(인자1, ...):
 []
 >>> type(my_list)
 <class 'list'>
-
 ```
 
 - 값을 가지고 있는 리스트 만들기
@@ -468,7 +443,6 @@ def 함수이름(인자1, ...):
 >>> my_list = [1, 2, 3]
 >>> print(my_list)
 [1, 2, 3]
-
 ```
 
 ### #17 리스트 값 추가하기
@@ -481,7 +455,6 @@ def 함수이름(인자1, ...):
 >>> students.append('Angela')
 >>> print(students)
 ['Tom', 'Alice', 'Sally', 'Betty', 'Angela']
-
 ```
 
 - 리스트는 마치 그릇과 같습니다. 그릇이 없는 상태에서 식재료를 쏟을 수 없습니다.
@@ -493,7 +466,6 @@ Traceback (most recent call last):
   File "<pyshell#16>", line 1, in <module>
     humans.append('David')
 NameError: name 'humans' is not defined
-
 ```
 
 ### #18 리스트 인덱싱, 슬라이싱
@@ -505,7 +477,6 @@ NameError: name 'humans' is not defined
 >>> animals = ['코알라', '하이에나', '바다소', '땅다람쥐', '바다코끼리', '스컹크', '아나콘다']
 >>> print(animals[1])
 ['하이에나']
-
 ```
 
 ### #19 리스트 메서드
@@ -519,7 +490,6 @@ NameError: name 'humans' is not defined
 >>> animals.sort()
 >>> print(animals)
 ['땅다람쥐', '바다소', '바다코끼리', '스컹크', '아나콘다', '코알라', '하이에나']
-
 ```
 
 - list.count(): 해당 값의 개수를 셉니다.
@@ -528,7 +498,6 @@ NameError: name 'humans' is not defined
 >>> animals =['코알라', '하이에나', '바다소', '땅다람쥐', '바다코끼리', '스컹크', '아나콘다']
 >>> print(animals.count('바다소'))
 1
-
 ```
 
 - 더 많은 리스트의 메서드를 알고 싶다면 구글에 검색해보세요.
@@ -549,7 +518,6 @@ NameError: name 'humans' is not defined
 >>> my_tuple = 1, 2, 3
 >>> type(my_tuple)
 <class 'tuple'>
-
 ```
 
 ### #21 패킹, 언패킹
@@ -564,7 +532,6 @@ NameError: name 'humans' is not defined
 1
 >>> print(num2)
 2
-
 ```
 
 - 두 변수의 값을 서로 바꿀 때도 사용할 수 있습니다.
@@ -577,7 +544,6 @@ NameError: name 'humans' is not defined
 2
 >>> print(num2)
 1
-
 ```
 
 ### #22 for
@@ -595,7 +561,6 @@ for 변수 in 컨테이너:
     실행할 명령1
     실행할 명령2
     ...
-
 ```
 
 - 컨테이너 안의 값을 전부 순회할 때까지 반복합니다.
@@ -626,7 +591,6 @@ for ch in '김왼손':
 김
 왼
 손
-
 ```
 
 #### 들여쓰기
@@ -653,7 +617,6 @@ for n in range(4, 6):
 
 4
 5
-
 ```
 
 ### #24 for x 2
@@ -664,7 +627,6 @@ for n in range(4, 6):
 ```python
 for i in range(1, 10):
     print('{}x{}={}'.format(2, i, 2 * i))
-
 ```
 
 - for를 중첩해서 사용하면 2단부터 9단까지 모두 출력할 수도 있습니다.
@@ -673,7 +635,6 @@ for i in range(1, 10):
 for j in range(2, 10):
     for i in range(1, 10):
         print('{}x{}={}'.format(j, i, j * i))
-
 ```
 
 ### #25 컴프리헨션
@@ -689,14 +650,12 @@ odd_numbers = []
 for number in numbers:
     if number % 2 == 1:  # 2로 나눴을 때 1이 남으면 홀수입니다.
         odd_numbers.append(number)
-
 ```
 
 - 다음은 컴프리헨션을 이용한 방법입니다.
 
 ```python
 >>> odd_numbers = [number for number in numbers if number % 2 == 1]
-
 ```
 
 ### #26 할당 연산자
@@ -709,7 +668,6 @@ for number in numbers:
 >>> my_int = 1
 >>> my_float = 2.0
 >>> my_list = []
-
 ```
 
 - +=와 같은 것들을 복합 할당 연산자라고 합니다.
@@ -722,7 +680,6 @@ for number in numbers:
 >>> count += 1  # count = count + 1과 같습니다.
 >>> print(count)
 2
-
 ```
 
 ### #27 산술 연산자
@@ -739,7 +696,6 @@ for number in numbers:
 12
 >>> print(12 / 3)
 4.0
-
 ```
 
 - 아래는 특수 연산자입니다.
@@ -755,7 +711,6 @@ for number in numbers:
 2
 >>> print(7 % 3)  # 7 나누기 3의 나머지
 1
-
 ```
 
 ### #28 %로 홀짝 구분하기
@@ -778,7 +733,6 @@ for number in numbers:
 5 : 홀수
 6 : 짝수
 7 : 홀수
-
 ```
 
 ### #29 문자열 연산자
@@ -791,7 +745,6 @@ for number in numbers:
 김왼손X집단지성들
 >>> print('안녕하세요' + ' ' + '반갑습니다')
 안녕하세요 반갑습니다
-
 ```
 
 - \* : 문자열을 해당 수만큼 반복합니다.
@@ -801,7 +754,6 @@ for number in numbers:
 안녕안녕안녕
 >>> print('안녕 ' * 5)
 안녕 안녕 안녕 안녕 안녕 
-
 ```
 
 ### #30 비교 연산자
@@ -828,7 +780,6 @@ False
 True
 >>> print(5 <= 5)
 True
-
 ```
 
 ### #31 논리 연산자
@@ -863,7 +814,6 @@ False
 True
 >>> print(not True)
 False
-
 ```
 
 - 놀이동산의 청룡 열차를 타기 위해서는 키와 나이 제한을 넘겨야 합니다.
@@ -876,7 +826,6 @@ False
 >>> my_age = 8
 >>> print(my_height > 140 and my_age > 10)
 False
-
 ```
 
 - 키가 190cm이면서 나이가 9살이면 어떨까요?
@@ -887,7 +836,6 @@ False
 >>> my_age = 9
 >>> print(my_height  > 140 and my_age > 10)
 False
-
 ```
 
 - 키가 150cm이면서 나이가 32살이면 어떨까요?
@@ -898,7 +846,6 @@ False
 >>> my_age = 32
 >>> print(my_height > 140 and my_age > 10)
 True
-
 ```
 
 ### #32 멤버쉽 연산자
@@ -918,7 +865,6 @@ False
 False
 >>> print('상추' not in fruits)
 True
-
 ```
 
 ### #33 if
@@ -928,7 +874,6 @@ if 조건:
     실행할 명령1
     실행할 명령2
     ...
-
 ```
 
 - 조건이 참인지 거짓인지 판단합니다.
@@ -945,7 +890,6 @@ if name == 'Edwin':
 
 당신이 Edwin이군요.
 만나서 반가워요 Edwin
-
 ```
 
 ### #34 else, elif
@@ -957,7 +901,6 @@ if 조건:
 else:
     실행할 명령3
     실행할 명령4
-
 ```
 
 - if와 함께 사용할 수 있는 친구들입니다.
@@ -971,7 +914,6 @@ else:
     print('아니 당신은!?')
 
 아니 당신은!?
-
 ```
 
 - elif : 이전의 if나 elif가 거짓일 경우 elif의 조건문으로 넘어갑니다.
@@ -992,7 +934,6 @@ else:
     print('아니 당신은!?')
 
 당신이 Bob이군요.
-
 ```
 
 ### #35 while
@@ -1002,7 +943,6 @@ while 조건:
     실행할 문장 1
     실행할 문장 2
     ...
-
 ```
 
 - 반복문은 반복되는 지루한 작업을 처리합니다.
@@ -1018,7 +958,6 @@ whlie count < 3:
 횟수: 0
 횟수: 1
 횟수: 2
-
 ```
 
 ### #36 continue, break
@@ -1034,14 +973,12 @@ while count < 10:
         continue
     if count == 8:
         break
-
 ```
 
 ### #37 딕셔너리
 
 ```python
 {key1: value1, key2: value2, key3: value3 ...}
-
 ```
 
 - 딕셔너리를 말 그대로 해석하면 사전입니다.
@@ -1054,7 +991,6 @@ while count < 10:
 >>> my_dict[1] = 'a'  # {1: 'a'}
 >>> my_dict['b'] = 2  # {1: 'a', 'b': 2}
 >>> my_dict['c'] = 'd'  # {1: 'a', 'b': 2, 'c': 'd'}
-
 ```
 
 ### #38 딕셔너리 메서드
@@ -1071,7 +1007,6 @@ for student in students.values():
 Tom
 Sally
 Betty
-
 ```
 
 - dict.keys(): 딕셔너리에서 키만 뽑아 돌려줍니다.
@@ -1084,7 +1019,6 @@ for key in students.keys():
 학생1
 학생2
 학생3
-
 ```
 
 - dict.items(): 딕셔너리에서 키와 값 쌍을 뽑아 돌려줍니다.
@@ -1097,7 +1031,6 @@ for key, val in students.items():
 학생1 Tom
 학생2 Sally
 학생3 Betty
-
 ```
 
 ### #39 함수
@@ -1115,7 +1048,6 @@ def 함수이름(인자1, ...):
     실행할 명령2
     ...
     return 결과
-
 ```
 
 - 함수에게 전달하는 값을 인자 혹은 매개변수라고 합니다.
@@ -1140,7 +1072,6 @@ def add_mul(num1, num2):
     return num1 + num2, num1 * num2
 
 my_add, my_mul = add_mul(1, 2)  # 3, 2
-
 ```
 
 ### #42 모듈
@@ -1152,7 +1083,6 @@ my_add, my_mul = add_mul(1, 2)  # 3, 2
 
 ```python
 import 모듈이름
-
 ```
 
 - 제품을 구매했을 때 배터리가 포함되어 있어 따로 구매할 필요가 없는 경우가 있습니다.
@@ -1174,7 +1104,6 @@ Betty
 Eric
 >>> print(random.choice(students))
 Tom
-
 ```
 
 - random.sample(): 리스트의 값 중에서 지정한 개수만큼 랜덤하게 선택합니다.
@@ -1184,7 +1113,6 @@ import random
 fruits = ['apple', 'banana', 'lemon']
 my_fruit = random.sample(fruits, 2)
 print(my_fruit) # ['apple', 'banana'] or ['banana', 'lemon'] or ...
-
 ```
 
 - random.randint(): 특정 범위의 정수 중 하나를 랜덤하게 선택합니다.
@@ -1193,7 +1121,6 @@ print(my_fruit) # ['apple', 'banana'] or ['banana', 'lemon'] or ...
 import random
 my_int = random.randint(0, 10)
 print(my_int)  # 0~10
-
 ```
 
 ### #44 객체
